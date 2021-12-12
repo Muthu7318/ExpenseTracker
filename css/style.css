@@ -1,0 +1,111 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  border: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  width: 90%;
+  margin: 0 auto;
+  font-family: sans-serif;
+  background-color: #f2f2f2; }
+
+.header {
+  height: 5rem;
+  font-size: 1.5rem; }
+  .header-nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0; }
+  .header-nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem; }
+  .header-right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5rem; }
+
+.main {
+  font-size: 2rem; }
+  .main-1 {
+    padding: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    align-items: center;
+    justify-items: center; }
+    .main-1-current-month {
+      padding: 2rem;
+      grid-column: 1/-1; }
+    .main-1-form-amount {
+      padding: 2rem;
+      grid-column: 1/-1; }
+    .main-1-net-income {
+      padding: 2rem;
+      grid-column: 1/-1; }
+    .main-1-add {
+      border-radius: 0.5rem;
+      padding: 0.8rem;
+      width: 5rem;
+      background-color: #1a1a1a;
+      color: #fff; }
+    .main-1-add-expense {
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      background-color: #1a1a1a;
+      color: #fff; }
+    .main-1-see-graph {
+      border-radius: 0.5rem;
+      padding: 1.5rem;
+      background-color: #1a1a1a;
+      color: #fff; }
+  .main-2-heading {
+    background-color: #1a1a1a;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around; }
+  .main-2-contentRow {
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around; }
+  .main-2-contentRow:nth-child(odd) {
+    background-color: #d9d9d9; }
+  .main-2-contentRow:nth-child(even) {
+    background-color: #a6a6a6; }
+  .main-2-category, .main-2-date, .main-2-amount {
+    width: 6rem; }
+  .main-2-options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem; }
+  .main-2-options-edit {
+    width: 2rem; }
+  .main-2-options-delete {
+    width: 2rem; }
+
+#amount {
+  height: 3rem;
+  border: 1px solid black; }
+
+.hide {
+  display: none; }
+
+.footer {
+  width: 80%;
+  height: 10rem;
+  font-size: 2rem;
+  margin: 0 auto;
+  padding: 5rem; }

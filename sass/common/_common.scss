@@ -1,0 +1,18 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  border: 0;
+  box-sizing: inherit;
+}
+html {
+  font-size: 62.5%; // 1rem = 10px; 10/16=0.625; so 62.5%
+}
+
+body {
+  box-sizing: border-box;
+  width: 90%;
+  margin: 0 auto;
+  font-family: sans-serif;
+  background-color: #f2f2f2;
+}
